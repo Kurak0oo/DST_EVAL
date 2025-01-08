@@ -1,0 +1,52 @@
+# Current Turn:
+- "Current Dialogue": system: {system}, user: {user}
+
+- "turn predict": {turn_label}
+
+# Instruction:
+Your task is to assess the completeness of the state of the current turn. The turn predict is represented by a set of domain-slot, value pairs that represent only the state mentioned in the current turn utterances between the system and the user:
+- Based on "All possible Domains and Slot-value pairs" and "Potential Missing cases" to evaluate the completeness according to "Current Dialogue".
+- If there are missing domain-slot Identify and extract **exact sentences or phrases** from the current turn (System or User).
+
+#All possible Domains and Slot-value pairs:
+1. Hotel: {{area, type, internet, parking, name, book day, price range, stars, book stay, book people}}
+2. Restaurant: {{area, book day, book people, book time, food, name, price range}}
+3. Attraction: {{area, name, type}}
+4. Taxi: {{arrive by, departure, destination, leave at}}
+5. Train: {{book people, day, departure, destination, leave at}}
+
+Categorical slots and their possible values:
+1. Area: centre, east, south, west, north
+2. Internet: yes, no
+3. Parking: yes, no
+4. Price range: cheap, moderate, expensive
+5. Stars: 1, 2, 3, 4, 5
+6. Day: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+7. Hotel-type: hotel, guest house
+8. Book people: 1, 2, 3, ..., 15
+9. Book stay: 1, 2, 3, ..., 15
+10. Arrive by & leave at: time in forms of “xx:xx” such as “13:00”
+
+# Potential Missing cases:
+- Implicit Acceptances
+Explanation: Information that the user has implicitly accepted but is not reflected in the predictions.
+Examples: System makes a recommendation, and the user says "That sounds good", “Thanks”, “Great”, but corresponding slots are missing.
+- Incomplete and implicit Preferences
+Explanation: The predictions omits slots where the user has expressed a desire but hasn't specified details.
+Examples: User says, "I want to go somewhere quiet," implying a preference, but related slots are missing.
+- Implicit 'Any' Preference
+Explanation: The user does not specify certain preferences, and the predictions should reflect this with appropriate 'dontcare' values, but these slots are missing.
+Examples: User wants any hotel but does not specify the area; hotel-area is missing instead of being set to 'dontcare'.
+
+# Output Format:
+Please output your analysis in JSON format as follows:
+{{
+"explanation": <the process of your step by step thinking>,
+// missed domain-slot, value pairs in "State of this turn". Note that domain-slot, value pairs not mentioned in the current turn utterances should not be considered and those value has not been expressed should not be
+"missed_domain_slot": {{"domain-slot1": <its corresponding value>, ...}},
+"evidence":<evidence1:...,evidence2:...>
+}}
+
+# Notices:
+-When the system provides a recommendation and the user either confirms acceptance or requests more information, the user is considered to have accepted the recommendation. In this case, the turn state should include the details of the recommendation. However, information that the user has requested should not be included in the turn state, as the system is expected to provide these details in the subsequent turn.
+-Note that domain-slot that should be added but are not provided in the dialogue should not be considered as missed domain-slots.

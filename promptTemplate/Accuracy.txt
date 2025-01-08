@@ -1,0 +1,41 @@
+# Dialogue History:
+{history}
+
+# Current Turn:
+{{
+"Agent": {system},
+"User": {user},
+"State of this turn": {turn_label}
+}}
+
+# Instruction:
+Your task is to identify and analyze **incorrect domain-slot, value pairs** in the belief state of the current dialogue turn. For each incorrect domain-slot, value pair in the belief state:
+-Provide an explanation of why the identified domain-slot, value pair is incorrect. Include specific reasons based on the current turn.
+-Extract **exact sentences or phrases** from the current turn (System or User) that indicate the incorrectness of the domain-slot, value pair or why it does not match the expected value.
+
+
+# Potential incorrect cases:
+-Incorrect Values
+Explanation: Predicted values do not align with the user's requests, dialogue history, or intent.
+Examples: Assigning train-leaveat to train-arriveby and vice versa.
+-Partial or Misinterpreted Matches
+Explanation: Predicted value partially or incorrectly matches the user intent but misses the full or correct information.
+Examples: Predicting "abbey pool" instead of "abbey pool and astroturf pitch."
+-Over-Inclusion and Invalid Slot Predictions
+Explanation: Inclusion of irrelevant, unsupported, or unnecessary slot predictions based on the dialogue context.
+Examples: Including an invalid slot like taxi-book stay.
+-Incorrect Handling of 'Dontcare' Values
+Explanation: Misinterpreting "dontcare" intent, leading to predictions with specific values instead of expressing indifference.
+Examples: Predicting a specific value for hotel-area or restaurant-area when the user has not indicated a preference.
+-Concatenation or Splitting Errors
+Explanation: Incorrectly combining or separating slot values, resulting in improper slot structure.
+Examples:Combining train-departure and train-destination as one value.
+
+# Output Format:
+Please output your analysis in JSON format as follows:
+{{
+"step_by_step_thinking": <the process of your step by step thinking>,
+// incorrect domain-slot, value pairs in "State of this turn". Note that only domain-slot, value pairs in "State of this turn" should be evaluated.
+"incorrect_domain_slot": {{"domain-slot1": <value1>, ...}},
+
+}}

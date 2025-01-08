@@ -1,0 +1,7 @@
+Given the following user input and the predicted dialogue state by the system, identify any errors in the prediction. Please categorize the error into a general category based on the **underlying cause**. Avoid focusing on very specific cases like slot mismatch; instead, explain what could have led to this error in a more general way. Also, explain why this error might happen in a DST model.
+
+User Input: "{user_input}"
+Predicted State: {predicted_state}
+Ground Truth State: {ground_truth_state}
+
+Error Type and Explanation:
