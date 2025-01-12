@@ -2,14 +2,14 @@ from multiprocessing import Pool
 from tqdm import tqdm
 from openai import OpenAI
 from func_timeout import func_set_timeout
-client = OpenAI(api_key="")
+client = OpenAI(api_key="sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d")
 
 
 @func_set_timeout(100)
 def call_openai_api(input_text):
     response = client.chat.completions.create(
         model="gpt-4o-2024-08-06",
-        messages=[{"role": "system", "content": "You are a helpful assistant"}, {"role": "user", "content": input_text}],
+        messages=[{"role": "system", "content": ""}, {"role": "user", "content": input_text}],
         temperature=0.0,
     )
     return my_parse(response)

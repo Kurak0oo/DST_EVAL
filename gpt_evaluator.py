@@ -1,5 +1,5 @@
 import json
-from gpt_generator import parallel_gpt_generate
+from gpt_setup import parallel_gpt_generate
 from tqdm import tqdm
 from argparse import ArgumentParser
 
@@ -17,7 +17,7 @@ def construct_history(history):
 
 
 def func(result_name):
-    with open("template/template_manual_acc.txt", encoding='utf-8') as f:
+    with open("promptTemplate/Taxonomy.txt", encoding='utf-8') as f:
         template = f.read()
     with open(f'./results/parsed/{result_name}', encoding='utf-8') as f:
         results = json.load(f)
@@ -53,7 +53,7 @@ def func(result_name):
     #     #     break
     #     last_bs = each['predict']
     res = parallel_gpt_generate(inputs)
-    with open(f'./output/cot_acc_output_{result_name}', 'w', encoding='utf-8') as file:
+    with open(f'./pipeline/error_classification/{result_name}', 'w', encoding='utf-8') as file:
 
         for align_data, gpt_out, gpt_input in res:
             lst.append([align_data, gpt_out, gpt_input])
@@ -62,6 +62,6 @@ def func(result_name):
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument('--result_name', default='original_slot_change_sampled.json', type=str)
+    parser.add_argument('--result_name', default='original.json', type=str)
     args = parser.parse_args()
     func(args.result_name)

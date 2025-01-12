@@ -1,7 +1,34 @@
-Given the following user input and the predicted dialogue state by the system, identify any errors in the prediction. Please categorize the error into a general category based on the **underlying cause**. Avoid focusing on very specific cases like slot mismatch; instead, explain what could have led to this error in a more general way. Also, explain why this error might happen in a DST model.
+### Instructions:
+Given the following dialogue history, model prediction, and ground truth, please **categorize the error** in a **generalized** way. Your response should focus on **why** this error might have occurred from a **higher-level perspective**. Specifically, focus on the broader causes of the error, and explain them without getting into trivial details or specific slot-value mismatches.
 
-User Input: "{user_input}"
-Predicted State: {predicted_state}
-Ground Truth State: {ground_truth_state}
+Your analysis should:
+1. **Categorize** the error in a **broad** error type with **as much general insights**.
+2. **Explain** the broader reasons behind this type of error.
+---
 
-Error Type and Explanation:
+### Dialogue Context:
+{history}
+
+### Model Prediction:
+{predict_history}
+
+### Ground Truth (M21):
+{ground_truth_m21}
+
+### Ground Truth (M24):
+{ground_truth_m24}
+
+---
+**Please categorize the errors so that could explain the broader causes of the error, its potential sources, and general patterns. Avoid focusing on specific slot-value errors, but provide insights that could apply to a wide range of situations and help guide future improvements for DST models.**
+
+### Example Output
+**1. General Error Category**:
+[Category name that highlights the broad cause or pattern of the error. Examples might include: 
+- Misunderstanding of Intent Due to Informal Language Usage
+- Context Loss Across Dialogue Turns
+- Inflexibility in Slot Matching and Lack of Semantic Understanding
+- Over-Penalization of Minor Slot Differences in Evaluation
+- Ambiguities in Ground Truth and Labeling Inconsistencies]
+
+**2. Error Description**:
+[A high-level summary of the error that avoids focusing on specific slot-value mismatches. The explanation should emphasize why the error happened from a broad perspective.]
