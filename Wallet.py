@@ -18,7 +18,7 @@ def credit_grants(query=None):
         None: If the request fails.
     """
     # Retrieve the API secret key from environment variables for security
-    api_secret_key = "sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d"
+    api_secret_key = "sk-zk2530d19d3258da9048c56420da65b48e06787cb93557f1"
 
 
     # Construct the full URL for the credit grants endpoint

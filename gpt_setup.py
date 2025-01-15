@@ -2,7 +2,7 @@ from multiprocessing import Pool
 from tqdm import tqdm
 from openai import OpenAI
 from func_timeout import func_set_timeout
-client = OpenAI(api_key="sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d",base_url="https://api.zhizengzeng.com/")
+client = OpenAI(api_key="sk-zk2530d19d3258da9048c56420da65b48e06787cb93557f1",base_url="https://api.zhizengzeng.com/")
 
 
 @func_set_timeout(100)

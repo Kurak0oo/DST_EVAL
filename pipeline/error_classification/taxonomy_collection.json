@@ -1,0 +1,58 @@
+{
+  "Incomplete Dialogue State Tracking Leading to Missing Information": {
+    "description": "The model fails to retain and integrate relevant information from previous turns, resulting in missing slots or incomplete tracking of user goals. Examples include missing confirmation details or failing to remember previously provided information.",
+    "count": 209
+  },
+  "Misinterpretation of User Intent Leading to Incorrect Slot Assignment": {
+    "description": "The model misunderstands user requests or intents, such as incorrectly handling negations or failing to recognize the relevance of certain slots based on user input.",
+    "count": 56
+  },
+  "Loss of Crucial Information Due to Oversight in Dialogue Turn Closure": {
+    "description": "The model does not recognize when a dialogue turn signifies the end of a conversation or task, leading to unnecessary predictions or missing final confirmations.",
+    "count": 11
+  },
+  "Failure to Update Dialogue State Based on User Feedback": {
+    "description": "The model lacks mechanisms to verify, reassess, or correct its outputs based on user feedback, resulting in the propagation of incorrect information.",
+    "count": 30
+  },
+  "Omission Errors Due to Incomplete Slot Recognition": {
+    "description": "The model fails to recognize and extract all relevant slots from the user's input, leading to incomplete predictions. For instance, missing the 'hotel-type' while capturing other slots.",
+    "count": 112
+  },
+  "Incorrect Slot Assignment Due to Slot Misclassification": {
+    "description": "The model assigns values to incorrect slots or misclassifies slot types, such as confusing 'taxi-departure' with 'taxi-destination'.",
+    "count": 25
+  },
+  "Overgeneralization Errors by Inferring Unmentioned Slots": {
+    "description": "The model infers or adds slots that were not explicitly mentioned by the user, often based on common patterns or assumptions, leading to incorrect predictions.",
+    "count": 27
+  },
+  "Ambiguous Entity Identification Leading to Incorrect Slot Filling": {
+    "description": "The model fails to map synonyms, plural forms, or spelling variations to standardized slot values, causing mismatches in entity recognition.",
+    "count": 8
+  },
+  "Handling Lexical Variations and Synonyms Leading to Incorrect Entity Recognition": {
+    "description": "The DST model fails to capture key slots or information from the dialogue that are implied or required as per user request, such as confirmation details or summary of the transaction. This failure might stem from inadequate contextual comprehension during dialogue transitions, leading the model to miss integrating specific details such as the travel arrangement's confirmation into its final prediction. Consequently, the model omits expected information, resulting in an empty output where a summary or confirmation output is anticipated.",
+    "count": 12
+  },
+  "Inconsistent Time Format Representation Leading to Mismatched Slot Values": {
+    "description": "Discrepancies in time formats (e.g., '1515hrs' vs. '15:15') cause mismatches with expected slot values, affecting validation and string matching.",
+    "count": 10
+  },
+  "Inconsistencies in Entity Naming Leading to Mismatched Information": {
+    "description": "Variations in how entities are named or described (e.g., 'el shaddai' vs. 'el shaddai guest house') result in mismatches and incomplete information capture.",
+    "count": 11
+  },
+  "Discrepancies in Dataset Annotations Leading to Misaligned Model Predictions": {
+    "description": "Inconsistencies across different dataset versions (e.g., MultiWOZ 2.1 vs. 2.4) cause the model to make incorrect predictions due to varying ground truths.",
+    "count": 8
+  },
+  "Semantic Misinterpretation Leading to Incorrect Slot Filling": {
+    "description": "The model misunderstands the semantics of user inputs, such as interpreting 'free wifi' as 'yes' for internet availability, leading to incorrect slot values.",
+    "count": 14
+  },
+  "Spelling or Typographical Errors Leading to Incorrect Slot Values": {
+    "description": "The prediction lacks the identification of the 'restaurant-name' slot ('cambridge chop house'), despite it being explicitly mentioned in the current dialogue. This suggests a failure in the model's ability to recognize and incorporate named entities that are essential for the task completion. This type of error often arises when the model fails to link dialogue context with specific entity mentions effectively. Improving entity recognition and context linkage can help the model capture necessary information, reducing such omission errors.",
+    "count": 6
+  }
+}

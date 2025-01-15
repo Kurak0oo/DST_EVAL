@@ -1,6 +1,7 @@
 import json
 import sys
 import os
+import re
 # Get the root directory path
 root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
@@ -12,6 +13,25 @@ from gpt_setup import parallel_gpt_generate
 from tqdm import tqdm
 from argparse import ArgumentParser
 
+
+def preprocess_gpt_output(gpt_out):
+    try:
+        # First, check if the output is wrapped in ```json ... ``` block using regex
+        pattern = r'```json([\s\S]*?)```'
+        match = re.search(pattern, gpt_out)
+
+        if match:
+            # Extract the matched JSON string inside the block
+            gpt_json = match.group(1).strip()  # Remove any extra spaces or newlines
+        else:
+            # If no match is found, assume the output is plain JSON and use it directly
+            gpt_json = gpt_out.strip()
+
+        # Now try parsing the extracted JSON
+        return json.loads(gpt_json)
+
+    except json.JSONDecodeError:
+        return None  # Return None if there's a JSON parsing error
 
 def func(result_name):
     """
@@ -71,39 +91,35 @@ def func(result_name):
             print(f"GPT Output: {gpt_out}")     # Debug log for GPT output
 
             # Ensure GPT output is not empty
-            if not gpt_out:
-                gpt_out = "No output from GPT"
-
-            # Parse GPT output
-            try:
-                parsed_output = json.loads(gpt_out)
-                refined_category = parsed_output.get("refined_category", "Uncategorized")
-                refined_description = parsed_output.get("refined_description", "No description provided.")
+            parsed_output = preprocess_gpt_output(gpt_out)
+            if parsed_output:
+                error_category = parsed_output.get("error_category", "Uncategorized")
+                error_description = parsed_output.get("error_description", "No description provided.")
 
                 # Update taxonomy if new category is added
-                if refined_category not in taxonomy:
-                    taxonomy[refined_category] = {
-                        "description": refined_description,
+                if error_category not in taxonomy:
+                    taxonomy[error_category] = {
+                        "description": error_description,
                         "count": 1
                     }
                 else:
-                    taxonomy[refined_category]["count"] += 1
+                    taxonomy[error_category]["count"] += 1
 
                 # Append the result
                 lst.append({
                     'align_data': align_data,
                     'gpt_out': gpt_out,
                     'gpt_input': gpt_input,
-                    'refined_category': refined_category,
-                    'refined_description': refined_description
+                    'error_category': error_category,
+                    'error_description': error_description
                 })
-            except json.JSONDecodeError:
+            else:
                 lst.append({
                     'align_data': align_data,
                     'gpt_out': gpt_out,
                     'gpt_input': gpt_input,
-                    'refined_category': "Parsing Error",
-                    'refined_description': "Failed to parse GPT output."
+                    'error_category': "Parsing Error",
+                    'error_description': "Failed to parse GPT output."
                 })
 
         # Write the refined error categorizations to the output file
