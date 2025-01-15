@@ -1,0 +1,3319 @@
+[
+  {
+    "flag": "SNG0991.json-0",
+    "system": "",
+    "user": "i want to find a guesthouse with free parking included . can you help ?",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "predict_turn_label": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m21": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m24": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "SNG0991.json-1",
+    "system": "there are 21 guesthouses that have parking available . is there a certain price range or part of the city you are interested in ?",
+    "user": "i would really like something expensive .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house",
+      "hotel-pricerange": "expensive"
+    },
+    "predict_turn_label": {
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_m21": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_m24": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-pricerange": "expensive"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i want to find a guesthouse with free parking included . can you help ?"
+    ]
+  },
+  {
+    "flag": "SNG0991.json-2",
+    "system": "unfortunately , i cannot find any that are expensive . let s try a different price range .",
+    "user": "alright , let s try for a cheap hotel .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house",
+      "hotel-pricerange": "cheap"
+    },
+    "predict_turn_label": {
+      "hotel-pricerange": "cheap"
+    },
+    "ground_truth_m21": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-type": "hotel"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-pricerange": "cheap",
+      "hotel-type": "hotel"
+    },
+    "ground_truth_m24": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-type": "hotel"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-pricerange": "cheap",
+      "hotel-type": "hotel"
+    },
+    "predict_slot_changes": {
+      "hotel-pricerange": "\"hotel-pricerange\": \"expensive\" -> \"hotel-pricerange\": \"cheap\""
+    },
+    "ground_truth_m21_slot_changes": {
+      "hotel-pricerange": "\"hotel-pricerange\": \"expensive\" -> \"hotel-pricerange\": \"cheap\"",
+      "hotel-type": "\"hotel-type\": \"guest house\" -> \"hotel-type\": \"hotel\""
+    },
+    "ground_truth_m24_slot_changes": {
+      "hotel-pricerange": "\"hotel-pricerange\": \"expensive\" -> \"hotel-pricerange\": \"cheap\"",
+      "hotel-type": "\"hotel-type\": \"guest house\" -> \"hotel-type\": \"hotel\""
+    },
+    "history": [
+      "",
+      "i want to find a guesthouse with free parking included . can you help ?",
+      "there are 21 guesthouses that have parking available . is there a certain price range or part of the city you are interested in ?",
+      "i would really like something expensive ."
+    ]
+  },
+  {
+    "flag": "SNG0991.json-3",
+    "system": "do you want a cheap hotel or a cheap guesthouse ?",
+    "user": "i meant a cheap guesthouse with free wifi .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes"
+    },
+    "predict_turn_label": {
+      "hotel-internet": "yes",
+      "hotel-pricerange": "cheap"
+    },
+    "ground_truth_m21": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m24": {
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {
+      "hotel-type": "\"hotel-type\": \"hotel\" -> \"hotel-type\": \"guest house\""
+    },
+    "ground_truth_m24_slot_changes": {
+      "hotel-type": "\"hotel-type\": \"hotel\" -> \"hotel-type\": \"guest house\""
+    },
+    "history": [
+      "",
+      "i want to find a guesthouse with free parking included . can you help ?",
+      "there are 21 guesthouses that have parking available . is there a certain price range or part of the city you are interested in ?",
+      "i would really like something expensive .",
+      "unfortunately , i cannot find any that are expensive . let s try a different price range .",
+      "alright , let s try for a cheap hotel ."
+    ]
+  },
+  {
+    "flag": "SNG0991.json-4",
+    "system": "how about alexander bed and breakfast ?",
+    "user": "sounds good , let s book it ! 8 people for 4 nights , starting friday .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-book people": "8",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-book stay": "4"
+    },
+    "predict_turn_label": {
+      "hotel-book people": "8",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-book stay": "4"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i want to find a guesthouse with free parking included . can you help ?",
+      "there are 21 guesthouses that have parking available . is there a certain price range or part of the city you are interested in ?",
+      "i would really like something expensive .",
+      "unfortunately , i cannot find any that are expensive . let s try a different price range .",
+      "alright , let s try for a cheap hotel .",
+      "do you want a cheap hotel or a cheap guesthouse ?",
+      "i meant a cheap guesthouse with free wifi ."
+    ]
+  },
+  {
+    "flag": "SNG0991.json-5",
+    "system": "booked . your reference number is 2v7ejva7 . is there anything else you need ?",
+    "user": "nope , that'll do it . thank you so much for your help !",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-type": "guest house",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-book people": "8",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-book stay": "4"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-book day": "friday",
+      "hotel-book people": "8",
+      "hotel-book stay": "4",
+      "hotel-name": "alexander bed and breakfast",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "cheap",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i want to find a guesthouse with free parking included . can you help ?",
+      "there are 21 guesthouses that have parking available . is there a certain price range or part of the city you are interested in ?",
+      "i would really like something expensive .",
+      "unfortunately , i cannot find any that are expensive . let s try a different price range .",
+      "alright , let s try for a cheap hotel .",
+      "do you want a cheap hotel or a cheap guesthouse ?",
+      "i meant a cheap guesthouse with free wifi .",
+      "how about alexander bed and breakfast ?",
+      "sounds good , let s book it ! 8 people for 4 nights , starting friday ."
+    ]
+  },
+  {
+    "flag": "SNG01530.json-0",
+    "system": "",
+    "user": "i am looking for a train please .",
+    "predict_history": {},
+    "predict_turn_label": {},
+    "ground_truth_m21": {},
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {},
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "SNG01530.json-1",
+    "system": "there are several trains , where do you want to go ?",
+    "user": "i need to go to norwich from cambridge .",
+    "predict_history": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "predict_turn_label": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_m21": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_m24": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a train please ."
+    ]
+  },
+  {
+    "flag": "SNG01530.json-2",
+    "system": "what day will you be traveling , please ?",
+    "user": "i will be traveling on friday .",
+    "predict_history": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge",
+      "train-day": "friday"
+    },
+    "predict_turn_label": {
+      "train-day": "friday"
+    },
+    "ground_truth_m21": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-day": "friday"
+    },
+    "ground_truth_m24": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-day": "friday"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a train please .",
+      "there are several trains , where do you want to go ?",
+      "i need to go to norwich from cambridge ."
+    ]
+  },
+  {
+    "flag": "SNG01530.json-3",
+    "system": "what time do you plan to leave cambridge ?",
+    "user": "any time on friday , arrive by 1515hrs . get me the train id please",
+    "predict_history": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge",
+      "train-day": "friday",
+      "train-arriveby": "1515hrs"
+    },
+    "predict_turn_label": {
+      "train-arriveby": "1515hrs"
+    },
+    "ground_truth_m21": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-arriveby": "15:15"
+    },
+    "ground_truth_m24": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-arriveby": "15:15"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a train please .",
+      "there are several trains , where do you want to go ?",
+      "i need to go to norwich from cambridge .",
+      "what day will you be traveling , please ?",
+      "i will be traveling on friday ."
+    ]
+  },
+  {
+    "flag": "SNG01530.json-4",
+    "system": "tr3034 arrives by 14:55 , would you like to book a seat ?",
+    "user": "yes please . help me get train id and travel time",
+    "predict_history": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge",
+      "train-day": "friday",
+      "train-arriveby": "1515hrs"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "train-book people": "1",
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-book people": "1"
+    },
+    "ground_truth_m24": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a train please .",
+      "there are several trains , where do you want to go ?",
+      "i need to go to norwich from cambridge .",
+      "what day will you be traveling , please ?",
+      "i will be traveling on friday .",
+      "what time do you plan to leave cambridge ?",
+      "any time on friday , arrive by 1515hrs . get me the train id please"
+    ]
+  },
+  {
+    "flag": "SNG01530.json-5",
+    "system": "all set , the total fee is 17.6 gbp payable at the station . reference number 4cuz9l1g . travel time is 79 minutes",
+    "user": "thank you , i think that s all i needed for now .",
+    "predict_history": {
+      "train-destination": "norwich",
+      "train-departure": "cambridge",
+      "train-day": "friday",
+      "train-arriveby": "1515hrs"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "train-book people": "1",
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "train-destination": "norwich",
+      "train-day": "friday",
+      "train-arriveby": "15:15",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a train please .",
+      "there are several trains , where do you want to go ?",
+      "i need to go to norwich from cambridge .",
+      "what day will you be traveling , please ?",
+      "i will be traveling on friday .",
+      "what time do you plan to leave cambridge ?",
+      "any time on friday , arrive by 1515hrs . get me the train id please",
+      "tr3034 arrives by 14:55 , would you like to book a seat ?",
+      "yes please . help me get train id and travel time"
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-0",
+    "system": "",
+    "user": "i need to find a hotel that has free parking .",
+    "predict_history": {
+      "hotel-type": "hotel",
+      "hotel-parking": "yes"
+    },
+    "predict_turn_label": {
+      "hotel-type": "hotel",
+      "hotel-parking": "yes"
+    },
+    "ground_truth_m21": {
+      "hotel-parking": "yes"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-parking": "yes"
+    },
+    "ground_truth_m24": {
+      "hotel-parking": "yes"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-parking": "yes"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "PMUL2708.json-1",
+    "system": "sure i can help with that . what area will you be staying in ?",
+    "user": "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0"
+    },
+    "predict_turn_label": {
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m24": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "predict_slot_changes": {
+      "hotel-type": "\"hotel-type\": \"hotel\" -> \"hotel-type\": \"guest house\""
+    },
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking ."
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-2",
+    "system": "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+    "user": "yes please . book it for 5 people and 3 nights starting from tuesday",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3"
+    },
+    "predict_turn_label": {
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-internet": "yes"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area ."
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-3",
+    "system": "okay , will you be needing a reference number ?",
+    "user": "yes , please for my records",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday"
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-4",
+    "system": "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+    "user": "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel .",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum"
+    },
+    "predict_turn_label": {
+      "attraction-type": "museum"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "attraction-type": "museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "attraction-type": "museum",
+      "attraction-area": "centre"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records"
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-5",
+    "system": "i have about 11 different museums . if i may , might i suggest the scott polar museum on lensfield road . they also have free entrance . it s a great place to visit .",
+    "user": "sure , what is the address for this museum ? thanks for your help !",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum"
+    },
+    "predict_turn_label": {
+      "attraction-name": "scott polar museum"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "attraction-name": "scott polar museum"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "attraction-name": "scott polar museum"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records",
+      "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+      "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel ."
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-6",
+    "system": "the museum is on lensfield road post code cb21er and it s number is 01223336540 .",
+    "user": "would it be possible to book a taxi to get from the hotel to the museum ? we would like to leave the hotel at 6:00 .",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "taxi-departure": "el shaddai",
+      "taxi-leaveat": "6:00",
+      "taxi-destination": "scott polar museum"
+    },
+    "predict_turn_label": {
+      "taxi-departure": "el shaddai",
+      "taxi-leaveat": "6:00",
+      "taxi-destination": "scott polar museum"
+    },
+    "ground_truth_m21": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guesthouse",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guesthouse"
+    },
+    "ground_truth_m24": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guest house",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guest house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records",
+      "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+      "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel .",
+      "i have about 11 different museums . if i may , might i suggest the scott polar museum on lensfield road . they also have free entrance . it s a great place to visit .",
+      "sure , what is the address for this museum ? thanks for your help !"
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-7",
+    "system": "i have your taxi booked . what else can i do ?",
+    "user": "well , do i look for a specific make and color car or just jump into a random 1 ? does the driver have a phone number ?",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "taxi-departure": "el shaddai",
+      "taxi-leaveat": "6:00",
+      "taxi-destination": "scott polar museum"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guesthouse",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guest house",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records",
+      "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+      "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel .",
+      "i have about 11 different museums . if i may , might i suggest the scott polar museum on lensfield road . they also have free entrance . it s a great place to visit .",
+      "sure , what is the address for this museum ? thanks for your help !",
+      "the museum is on lensfield road post code cb21er and it s number is 01223336540 .",
+      "would it be possible to book a taxi to get from the hotel to the museum ? we would like to leave the hotel at 6:00 ."
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-8",
+    "system": "you have been assigned a specific car .",
+    "user": "well what is it ? this is ridiculous ! your very rude",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "taxi-departure": "el shaddai",
+      "taxi-leaveat": "6:00",
+      "taxi-destination": "scott polar museum"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guesthouse",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guest house",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records",
+      "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+      "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel .",
+      "i have about 11 different museums . if i may , might i suggest the scott polar museum on lensfield road . they also have free entrance . it s a great place to visit .",
+      "sure , what is the address for this museum ? thanks for your help !",
+      "the museum is on lensfield road post code cb21er and it s number is 01223336540 .",
+      "would it be possible to book a taxi to get from the hotel to the museum ? we would like to leave the hotel at 6:00 .",
+      "i have your taxi booked . what else can i do ?",
+      "well , do i look for a specific make and color car or just jump into a random 1 ? does the driver have a phone number ?"
+    ]
+  },
+  {
+    "flag": "PMUL2708.json-9",
+    "system": "i apologize . i did not mean to come off as rude . you should expect a white volvo . if you need to reach the company , please call 07499481174 .",
+    "user": "thank you ! have a wonderful day !",
+    "predict_history": {
+      "hotel-type": "guest house",
+      "hotel-parking": "yes",
+      "hotel-area": "centre",
+      "hotel-stars": "0",
+      "hotel-book people": "5",
+      "hotel-book day": "tuesday",
+      "hotel-book stay": "3",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "taxi-departure": "el shaddai",
+      "taxi-leaveat": "6:00",
+      "taxi-destination": "scott polar museum"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guesthouse",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guesthouse",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-internet": "yes",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "taxi-leaveat": "06:00",
+      "taxi-destination": "scott polar museum",
+      "taxi-departure": "el shaddia guest house",
+      "hotel-book day": "tuesday",
+      "hotel-book people": "5",
+      "hotel-book stay": "3",
+      "hotel-name": "el shaddia guest house",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-stars": "0",
+      "hotel-type": "guest house",
+      "attraction-type": "museum",
+      "attraction-name": "scott polar museum",
+      "attraction-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to find a hotel that has free parking .",
+      "sure i can help with that . what area will you be staying in ?",
+      "in the centre , i more specifically am looking for a guesthouse with a 0 star rating in that area .",
+      "el shaddai is a 0 star guesthouse located in the centre has both free parking and wifi . what days are you interested in staying there ? can i book for you ?",
+      "yes please . book it for 5 people and 3 nights starting from tuesday",
+      "okay , will you be needing a reference number ?",
+      "yes , please for my records",
+      "i have your reservation for 5 people , 3 nights starting on tuesday . your reference number is x3mdwdwy , can i help with anything else ?",
+      "yes , i am interested in place -s to go while i am in town . perhaps a museum in the same area as the hotel .",
+      "i have about 11 different museums . if i may , might i suggest the scott polar museum on lensfield road . they also have free entrance . it s a great place to visit .",
+      "sure , what is the address for this museum ? thanks for your help !",
+      "the museum is on lensfield road post code cb21er and it s number is 01223336540 .",
+      "would it be possible to book a taxi to get from the hotel to the museum ? we would like to leave the hotel at 6:00 .",
+      "i have your taxi booked . what else can i do ?",
+      "well , do i look for a specific make and color car or just jump into a random 1 ? does the driver have a phone number ?",
+      "you have been assigned a specific car .",
+      "well what is it ? this is ridiculous ! your very rude"
+    ]
+  },
+  {
+    "flag": "MUL0613.json-0",
+    "system": "",
+    "user": "hi , i am looking for information about the warkworth house hotel .",
+    "predict_history": {
+      "hotel-name": "warkworth house"
+    },
+    "predict_turn_label": {
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_m21": {
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_m24": {
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-name": "warkworth house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "MUL0613.json-1",
+    "system": "is there anything specific you would like to know about the warkworth house hotel ?",
+    "user": "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number .",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2"
+    },
+    "predict_turn_label": {
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel ."
+    ]
+  },
+  {
+    "flag": "MUL0613.json-2",
+    "system": "your room has been booked successfully . your confirmation number is arwor7qp . would you like help with anything else ?",
+    "user": "i am also looking to book a train to norwich .",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "train-destination": "norwich"
+    },
+    "predict_turn_label": {
+      "train-destination": "norwich"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-destination": "norwich"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-destination": "norwich"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel .",
+      "is there anything specific you would like to know about the warkworth house hotel ?",
+      "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number ."
+    ]
+  },
+  {
+    "flag": "MUL0613.json-3",
+    "system": "what day are you looking to depart ?",
+    "user": "i would like to leave on saturday from cambridge to be in norwich before 21:00 .",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "train-destination": "norwich",
+      "train-arriveby": "21:00",
+      "train-day": "saturday"
+    },
+    "predict_turn_label": {
+      "train-arriveby": "21:00",
+      "train-day": "saturday"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel .",
+      "is there anything specific you would like to know about the warkworth house hotel ?",
+      "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number .",
+      "your room has been booked successfully . your confirmation number is arwor7qp . would you like help with anything else ?",
+      "i am also looking to book a train to norwich ."
+    ]
+  },
+  {
+    "flag": "MUL0613.json-4",
+    "system": "tr4018 leaves cambridge at 17:36 and arrives at 18:55 . may i book it for you ?",
+    "user": "thank you so much . so that means a 79 minute travel time ? let s go ahead and book it .",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "train-destination": "norwich",
+      "train-arriveby": "21:00",
+      "train-day": "saturday"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel .",
+      "is there anything specific you would like to know about the warkworth house hotel ?",
+      "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number .",
+      "your room has been booked successfully . your confirmation number is arwor7qp . would you like help with anything else ?",
+      "i am also looking to book a train to norwich .",
+      "what day are you looking to depart ?",
+      "i would like to leave on saturday from cambridge to be in norwich before 21:00 ."
+    ]
+  },
+  {
+    "flag": "MUL0613.json-5",
+    "system": "do you need 2 tickets ?",
+    "user": "actually , i think i may book it later . thank you very much for all your help .",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "train-destination": "norwich",
+      "train-arriveby": "21:00",
+      "train-day": "saturday"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel .",
+      "is there anything specific you would like to know about the warkworth house hotel ?",
+      "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number .",
+      "your room has been booked successfully . your confirmation number is arwor7qp . would you like help with anything else ?",
+      "i am also looking to book a train to norwich .",
+      "what day are you looking to depart ?",
+      "i would like to leave on saturday from cambridge to be in norwich before 21:00 .",
+      "tr4018 leaves cambridge at 17:36 and arrives at 18:55 . may i book it for you ?",
+      "thank you so much . so that means a 79 minute travel time ? let s go ahead and book it ."
+    ]
+  },
+  {
+    "flag": "MUL0613.json-6",
+    "system": "okay ! you are very welcome . to answer your earlier question , yes: the travel time is 79 minutes . is there anything else i can help you with today ?",
+    "user": "no , that s it . thank you !",
+    "predict_history": {
+      "hotel-name": "warkworth house",
+      "hotel-book stay": "5",
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "train-destination": "norwich",
+      "train-arriveby": "21:00",
+      "train-day": "saturday"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-book day": "monday",
+      "hotel-book people": "2",
+      "hotel-book stay": "5",
+      "hotel-name": "warkworth house",
+      "train-destination": "norwich",
+      "train-day": "saturday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi , i am looking for information about the warkworth house hotel .",
+      "is there anything specific you would like to know about the warkworth house hotel ?",
+      "i just would like to book it for 2 people , for 5 nights , beginning monday . please give me reference number .",
+      "your room has been booked successfully . your confirmation number is arwor7qp . would you like help with anything else ?",
+      "i am also looking to book a train to norwich .",
+      "what day are you looking to depart ?",
+      "i would like to leave on saturday from cambridge to be in norwich before 21:00 .",
+      "tr4018 leaves cambridge at 17:36 and arrives at 18:55 . may i book it for you ?",
+      "thank you so much . so that means a 79 minute travel time ? let s go ahead and book it .",
+      "do you need 2 tickets ?",
+      "actually , i think i may book it later . thank you very much for all your help ."
+    ]
+  },
+  {
+    "flag": "PMUL4362.json-0",
+    "system": "",
+    "user": "hi there . can you help me find a restaurant in the centre ?",
+    "predict_history": {
+      "restaurant-area": "centre"
+    },
+    "predict_turn_label": {
+      "restaurant-area": "centre"
+    },
+    "ground_truth_m21": {
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-area": "centre"
+    },
+    "ground_truth_m24": {
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-area": "centre"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "PMUL4362.json-1",
+    "system": "yes , there are some great choices . do you like a particular cuisine ?",
+    "user": "yes i would like it to serve asian oriental",
+    "predict_history": {
+      "restaurant-area": "centre",
+      "restaurant-food": "asian oriental"
+    },
+    "predict_turn_label": {
+      "restaurant-food": "asian oriental"
+    },
+    "ground_truth_m21": {
+      "restaurant-food": "asian oriental",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-food": "asian oriental"
+    },
+    "ground_truth_m24": {
+      "restaurant-food": "asian oriental",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-food": "asian oriental"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi there . can you help me find a restaurant in the centre ?"
+    ]
+  },
+  {
+    "flag": "PMUL4362.json-2",
+    "system": "there are 4 options available that meet your criteria . i would recommend the yippee noodle bar . would you like to book a table ?",
+    "user": "no , but i would like the postcode for that restaurant please . i also need to find a place to stay . could you help me with that ?",
+    "predict_history": {
+      "restaurant-area": "centre",
+      "restaurant-food": "asian oriental"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-name": "yippee noodle bar"
+    },
+    "ground_truth_m24": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-name": "yippee noodle bar"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi there . can you help me find a restaurant in the centre ?",
+      "yes , there are some great choices . do you like a particular cuisine ?",
+      "yes i would like it to serve asian oriental"
+    ]
+  },
+  {
+    "flag": "PMUL4362.json-3",
+    "system": "the postcode of the restaurant is cb11lh . i can help you find a place to stay . did you have a certain area in mind ?",
+    "user": "how about some place cheap , with 4 stars ?",
+    "predict_history": {
+      "restaurant-area": "centre",
+      "restaurant-food": "asian oriental",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "predict_turn_label": {
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "ground_truth_m21": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "ground_truth_m24": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi there . can you help me find a restaurant in the centre ?",
+      "yes , there are some great choices . do you like a particular cuisine ?",
+      "yes i would like it to serve asian oriental",
+      "there are 4 options available that meet your criteria . i would recommend the yippee noodle bar . would you like to book a table ?",
+      "no , but i would like the postcode for that restaurant please . i also need to find a place to stay . could you help me with that ?"
+    ]
+  },
+  {
+    "flag": "PMUL4362.json-4",
+    "system": "did you want the hotel to be in the centre area , also ?",
+    "user": "centre area will work . but it has to be a guest house . i also need the adress and post code .",
+    "predict_history": {
+      "restaurant-area": "centre",
+      "restaurant-food": "asian oriental",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-area": "centre"
+    },
+    "predict_turn_label": {
+      "hotel-area": "centre"
+    },
+    "ground_truth_m21": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-area": "centre",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_m24": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-area": "centre",
+      "hotel-type": "guest house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi there . can you help me find a restaurant in the centre ?",
+      "yes , there are some great choices . do you like a particular cuisine ?",
+      "yes i would like it to serve asian oriental",
+      "there are 4 options available that meet your criteria . i would recommend the yippee noodle bar . would you like to book a table ?",
+      "no , but i would like the postcode for that restaurant please . i also need to find a place to stay . could you help me with that ?",
+      "the postcode of the restaurant is cb11lh . i can help you find a place to stay . did you have a certain area in mind ?",
+      "how about some place cheap , with 4 stars ?"
+    ]
+  },
+  {
+    "flag": "PMUL4362.json-5",
+    "system": "the alexander bed and breakfast seems to be a good fit . they are located at 56 saint barnabas road , postcode cb12de .",
+    "user": "that was all i needed thank you .",
+    "predict_history": {
+      "restaurant-area": "centre",
+      "restaurant-food": "asian oriental",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-area": "centre"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "restaurant-food": "asian oriental",
+      "restaurant-name": "yippee noodle bar",
+      "restaurant-area": "centre",
+      "hotel-area": "centre",
+      "hotel-pricerange": "cheap",
+      "hotel-stars": "4",
+      "hotel-type": "guest house"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hi there . can you help me find a restaurant in the centre ?",
+      "yes , there are some great choices . do you like a particular cuisine ?",
+      "yes i would like it to serve asian oriental",
+      "there are 4 options available that meet your criteria . i would recommend the yippee noodle bar . would you like to book a table ?",
+      "no , but i would like the postcode for that restaurant please . i also need to find a place to stay . could you help me with that ?",
+      "the postcode of the restaurant is cb11lh . i can help you find a place to stay . did you have a certain area in mind ?",
+      "how about some place cheap , with 4 stars ?",
+      "did you want the hotel to be in the centre area , also ?",
+      "centre area will work . but it has to be a guest house . i also need the adress and post code ."
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-0",
+    "system": "",
+    "user": "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge"
+    },
+    "predict_turn_label": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge"
+    },
+    "ground_truth_m21": {
+      "train-destination": "cambridge",
+      "train-arriveby": "17:15"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-destination": "cambridge",
+      "train-arriveby": "17:15"
+    },
+    "ground_truth_m24": {
+      "train-destination": "cambridge",
+      "train-arriveby": "17:15"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-destination": "cambridge",
+      "train-arriveby": "17:15"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "PMUL3425.json-1",
+    "system": "we'll find you something . where are you departing from ?",
+    "user": "i am departing from london kings cross on monday .",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday"
+    },
+    "predict_turn_label": {
+      "train-departure": "london kings cross",
+      "train-day": "monday"
+    },
+    "ground_truth_m21": {
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-day": "monday",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_m24": {
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-day": "monday",
+      "train-departure": "london kings cross"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 ."
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-2",
+    "system": "i have train tr9114 that leaves at 15:17 and will get you into cambridge by 16:08 . would that work for you ?",
+    "user": "that is fine . get me the travel time",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+      "we'll find you something . where are you departing from ?",
+      "i am departing from london kings cross on monday ."
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-3",
+    "system": "the travel time for the tr9114 is 51 minutes . is there anything else i can help you with ?",
+    "user": "yes , i am also looking for an expensive restaurant in the center of town .",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre"
+    },
+    "predict_turn_label": {
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_m21": {
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre"
+    },
+    "ground_truth_m24": {
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+      "we'll find you something . where are you departing from ?",
+      "i am departing from london kings cross on monday .",
+      "i have train tr9114 that leaves at 15:17 and will get you into cambridge by 16:08 . would that work for you ?",
+      "that is fine . get me the travel time"
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-4",
+    "system": "i have 33 expensive restaurant -s in the centre of town . what type of food would you like ?",
+    "user": "the type of food is not important , but i need 1 that can seat 8 people at 21:00 . can you make a suggestion ?",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "restaurant-book time": "21:00"
+    },
+    "predict_turn_label": {
+      "restaurant-book time": "21:00"
+    },
+    "ground_truth_m21": {
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-food": "dontcare"
+    },
+    "ground_truth_m24": {
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+      "we'll find you something . where are you departing from ?",
+      "i am departing from london kings cross on monday .",
+      "i have train tr9114 that leaves at 15:17 and will get you into cambridge by 16:08 . would that work for you ?",
+      "that is fine . get me the travel time",
+      "the travel time for the tr9114 is 51 minutes . is there anything else i can help you with ?",
+      "yes , i am also looking for an expensive restaurant in the center of town ."
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-5",
+    "system": "i would recommend the cambridge chop house . it serves british food . would you like me to try to make a reservation ?",
+    "user": "yes please . i need it to be for 8 people at 21:00 on monday .",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "restaurant-book time": "21:00",
+      "restaurant-book people": "8",
+      "restaurant-book day": "monday"
+    },
+    "predict_turn_label": {
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-book day": "monday"
+    },
+    "ground_truth_m21": {
+      "restaurant-book day": "monday",
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-name": "cambridge chop house",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-book day": "monday",
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-name": "cambridge chop house"
+    },
+    "ground_truth_m24": {
+      "restaurant-book day": "monday",
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-name": "cambridge chop house",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-book day": "monday",
+      "restaurant-name": "cambridge chop house"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+      "we'll find you something . where are you departing from ?",
+      "i am departing from london kings cross on monday .",
+      "i have train tr9114 that leaves at 15:17 and will get you into cambridge by 16:08 . would that work for you ?",
+      "that is fine . get me the travel time",
+      "the travel time for the tr9114 is 51 minutes . is there anything else i can help you with ?",
+      "yes , i am also looking for an expensive restaurant in the center of town .",
+      "i have 33 expensive restaurant -s in the centre of town . what type of food would you like ?",
+      "the type of food is not important , but i need 1 that can seat 8 people at 21:00 . can you make a suggestion ?"
+    ]
+  },
+  {
+    "flag": "PMUL3425.json-6",
+    "system": "booking was successful . the table will be reserved for 15 minutes . your reference number is : 4dh6bkjo . can i help you with anything else ?",
+    "user": "thank you so much for all of your help you have been great !",
+    "predict_history": {
+      "train-arriveby": "17:15",
+      "train-destination": "cambridge",
+      "train-departure": "london kings cross",
+      "train-day": "monday",
+      "restaurant-pricerange": "expensive",
+      "restaurant-area": "centre",
+      "restaurant-book time": "21:00",
+      "restaurant-book people": "8",
+      "restaurant-book day": "monday"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "restaurant-book day": "monday",
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-name": "cambridge chop house",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "restaurant-book day": "monday",
+      "restaurant-book people": "8",
+      "restaurant-book time": "21:00",
+      "restaurant-food": "dontcare",
+      "restaurant-pricerange": "expensive",
+      "restaurant-name": "cambridge chop house",
+      "restaurant-area": "centre",
+      "train-destination": "cambridge",
+      "train-day": "monday",
+      "train-arriveby": "17:15",
+      "train-departure": "london kings cross"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "hello , i am looking for a train to cambridge that arrives by 17:15 .",
+      "we'll find you something . where are you departing from ?",
+      "i am departing from london kings cross on monday .",
+      "i have train tr9114 that leaves at 15:17 and will get you into cambridge by 16:08 . would that work for you ?",
+      "that is fine . get me the travel time",
+      "the travel time for the tr9114 is 51 minutes . is there anything else i can help you with ?",
+      "yes , i am also looking for an expensive restaurant in the center of town .",
+      "i have 33 expensive restaurant -s in the centre of town . what type of food would you like ?",
+      "the type of food is not important , but i need 1 that can seat 8 people at 21:00 . can you make a suggestion ?",
+      "i would recommend the cambridge chop house . it serves british food . would you like me to try to make a reservation ?",
+      "yes please . i need it to be for 8 people at 21:00 on monday ."
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-0",
+    "system": "",
+    "user": "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00"
+    },
+    "predict_turn_label": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00"
+    },
+    "ground_truth_m21": {
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_m24": {
+      "train-leaveat": "18:00",
+      "train-day": "wednesday",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-leaveat": "18:00",
+      "train-day": "wednesday",
+      "train-departure": "cambridge"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "PMUL1435.json-1",
+    "system": "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+    "user": "yes 18:15 would work i have to get there by 21:00 is that an option ?",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00"
+    },
+    "predict_turn_label": {
+      "train-arriveby": "21:00"
+    },
+    "ground_truth_m21": {
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-arriveby": "21:00"
+    },
+    "ground_truth_m24": {
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-leaveat": "18:15",
+      "train-arriveby": "21:00"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {
+      "train-leaveat": "\"train-leaveat\": \"18:00\" -> \"train-leaveat\": \"18:15\""
+    },
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday ."
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-2",
+    "system": "yes . i would recommend tr7776 which leaves cambridge at 18:36 and arrives in norwich at 19:55 .",
+    "user": "what is the price and travel time ?",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "train-leaveat": "18:15",
+      "train-destination": "norwich",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-destination": "norwich"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+      "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+      "yes 18:15 would work i have to get there by 21:00 is that an option ?"
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-3",
+    "system": "the travel time is 79 minutes and the cost is 17.60 pounds , shall i book for you ?",
+    "user": "no but i do need information on adc theatre .",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00",
+      "attraction-name": "adc theatre"
+    },
+    "predict_turn_label": {
+      "attraction-name": "adc theatre"
+    },
+    "ground_truth_m21": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {
+      "attraction-name": "adc theatre"
+    },
+    "ground_truth_m24": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-destination": "norwich",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {
+      "attraction-name": "adc theatre"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+      "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+      "yes 18:15 would work i have to get there by 21:00 is that an option ?",
+      "yes . i would recommend tr7776 which leaves cambridge at 18:36 and arrives in norwich at 19:55 .",
+      "what is the price and travel time ?"
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-4",
+    "system": "this is a theatre found at the center of town on park street . their phone number is 01223300085",
+    "user": "excellent . thanks for your assistance !",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00",
+      "attraction-name": "adc theatre"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-destination": "norwich",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+      "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+      "yes 18:15 would work i have to get there by 21:00 is that an option ?",
+      "yes . i would recommend tr7776 which leaves cambridge at 18:36 and arrives in norwich at 19:55 .",
+      "what is the price and travel time ?",
+      "the travel time is 79 minutes and the cost is 17.60 pounds , shall i book for you ?",
+      "no but i do need information on adc theatre ."
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-5",
+    "system": "is there any more information that i can get for you or something that you need booked ?",
+    "user": "no at this time , thank you .",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00",
+      "attraction-name": "adc theatre"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-destination": "norwich",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+      "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+      "yes 18:15 would work i have to get there by 21:00 is that an option ?",
+      "yes . i would recommend tr7776 which leaves cambridge at 18:36 and arrives in norwich at 19:55 .",
+      "what is the price and travel time ?",
+      "the travel time is 79 minutes and the cost is 17.60 pounds , shall i book for you ?",
+      "no but i do need information on adc theatre .",
+      "this is a theatre found at the center of town on park street . their phone number is 01223300085",
+      "excellent . thanks for your assistance !"
+    ]
+  },
+  {
+    "flag": "PMUL1435.json-6",
+    "system": "yeah anytime . i am happy i could help out .",
+    "user": "thank you for your help .",
+    "predict_history": {
+      "train-day": "wednesday",
+      "train-departure": "cambridge",
+      "train-leaveat": "18:00",
+      "train-arriveby": "21:00",
+      "attraction-name": "adc theatre"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "attraction-name": "adc theatre",
+      "train-leaveat": "18:15",
+      "train-destination": "norwich",
+      "train-day": "wednesday",
+      "train-arriveby": "21:00",
+      "train-departure": "cambridge"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need to take a train from cambridge , i will be leaving after 18:00 on wednesday .",
+      "i have 5 that leave after 18:00 . do you have a specific time in mind ?",
+      "yes 18:15 would work i have to get there by 21:00 is that an option ?",
+      "yes . i would recommend tr7776 which leaves cambridge at 18:36 and arrives in norwich at 19:55 .",
+      "what is the price and travel time ?",
+      "the travel time is 79 minutes and the cost is 17.60 pounds , shall i book for you ?",
+      "no but i do need information on adc theatre .",
+      "this is a theatre found at the center of town on park street . their phone number is 01223300085",
+      "excellent . thanks for your assistance !",
+      "is there any more information that i can get for you or something that you need booked ?",
+      "no at this time , thank you ."
+    ]
+  },
+  {
+    "flag": "MUL0760.json-0",
+    "system": "",
+    "user": "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre"
+    },
+    "predict_turn_label": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_m24": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "MUL0760.json-1",
+    "system": "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+    "user": "i need it to have free wifi and free parking . does 1 of them offer both ?",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes"
+    },
+    "predict_turn_label": {
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-internet": "yes"
+    },
+    "ground_truth_m24": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-parking": "yes",
+      "hotel-internet": "yes"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?"
+    ]
+  },
+  {
+    "flag": "MUL0760.json-2",
+    "system": "yes , they both do . may i recommend gonville hotel ?",
+    "user": "absolutely , can you provide me with the postcode and hotel type of the gonville hotel ?",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes",
+      "hotel-name": "gonville hotel"
+    },
+    "predict_turn_label": {
+      "hotel-name": "gonville hotel"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-name": "gonville hotel",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-name": "gonville hotel"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+      "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+      "i need it to have free wifi and free parking . does 1 of them offer both ?"
+    ]
+  },
+  {
+    "flag": "MUL0760.json-3",
+    "system": "sure , the postcode is cb11ly . can i book a room for you ?",
+    "user": "no thank you . i am needing a train that will leave on wednesday and arrive by 13:15 .",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes",
+      "hotel-name": "gonville hotel",
+      "train-arriveby": "13:15",
+      "train-day": "wednesday"
+    },
+    "predict_turn_label": {
+      "train-arriveby": "13:15",
+      "train-day": "wednesday"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-parking": "yes",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15"
+    },
+    "ground_truth_m24": {
+      "hotel-name": "gonville hotel",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-day": "wednesday",
+      "train-arriveby": "13:15"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+      "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+      "i need it to have free wifi and free parking . does 1 of them offer both ?",
+      "yes , they both do . may i recommend gonville hotel ?",
+      "absolutely , can you provide me with the postcode and hotel type of the gonville hotel ?"
+    ]
+  },
+  {
+    "flag": "MUL0760.json-4",
+    "system": "i will check to see if i can find a train that matches your needs .",
+    "user": "thanks . i'll be heading from broxbourne to cambridge .",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes",
+      "hotel-name": "gonville hotel",
+      "train-arriveby": "13:15",
+      "train-day": "wednesday",
+      "train-departure": "broxbourne",
+      "train-destination": "cambridge"
+    },
+    "predict_turn_label": {
+      "train-departure": "broxbourne",
+      "train-destination": "cambridge"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-destination": "cambridge",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_m24": {
+      "hotel-name": "gonville hotel",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-destination": "cambridge",
+      "train-departure": "broxbourne"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+      "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+      "i need it to have free wifi and free parking . does 1 of them offer both ?",
+      "yes , they both do . may i recommend gonville hotel ?",
+      "absolutely , can you provide me with the postcode and hotel type of the gonville hotel ?",
+      "sure , the postcode is cb11ly . can i book a room for you ?",
+      "no thank you . i am needing a train that will leave on wednesday and arrive by 13:15 ."
+    ]
+  },
+  {
+    "flag": "MUL0760.json-5",
+    "system": "i have 7 trains that meet your needs train tr5953 arrives in cambridge at 12:32 . would you like me to book it for you ?",
+    "user": "tr5953 works fine , i need 3 people",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes",
+      "hotel-name": "gonville hotel",
+      "train-arriveby": "13:15",
+      "train-day": "wednesday",
+      "train-departure": "broxbourne",
+      "train-destination": "cambridge",
+      "train-book people": "3"
+    },
+    "predict_turn_label": {
+      "train-book people": "3"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-book people": "3",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m21": {
+      "train-book people": "3"
+    },
+    "ground_truth_m24": {
+      "hotel-name": "gonville hotel",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-book people": "3",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m24": {
+      "train-book people": "3"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+      "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+      "i need it to have free wifi and free parking . does 1 of them offer both ?",
+      "yes , they both do . may i recommend gonville hotel ?",
+      "absolutely , can you provide me with the postcode and hotel type of the gonville hotel ?",
+      "sure , the postcode is cb11ly . can i book a room for you ?",
+      "no thank you . i am needing a train that will leave on wednesday and arrive by 13:15 .",
+      "i will check to see if i can find a train that matches your needs .",
+      "thanks . i'll be heading from broxbourne to cambridge ."
+    ]
+  },
+  {
+    "flag": "MUL0760.json-6",
+    "system": "your reference number is k1bwuixz , and the fee is 53.7 gbp , payable at the station . is there anything else i can help you with today ?",
+    "user": "no thank you , you've been very helpful . have a good day !",
+    "predict_history": {
+      "hotel-pricerange": "expensive",
+      "hotel-area": "centre",
+      "hotel-internet": "free wifi",
+      "hotel-type": "hotel",
+      "hotel-parking": "yes",
+      "hotel-name": "gonville hotel",
+      "train-arriveby": "13:15",
+      "train-day": "wednesday",
+      "train-departure": "broxbourne",
+      "train-destination": "cambridge",
+      "train-book people": "3"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-book people": "3",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "hotel-name": "gonville hotel",
+      "hotel-area": "centre",
+      "hotel-parking": "yes",
+      "hotel-pricerange": "expensive",
+      "hotel-internet": "yes",
+      "train-book people": "3",
+      "train-destination": "cambridge",
+      "train-day": "wednesday",
+      "train-arriveby": "13:15",
+      "train-departure": "broxbourne"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay . could you find me a place in the centre of town that is expensive ?",
+      "there are 2 hotel -s in that area that are in the expensive price range , 1 is a 3 star and the other 4 star . which 1 would you prefer ?",
+      "i need it to have free wifi and free parking . does 1 of them offer both ?",
+      "yes , they both do . may i recommend gonville hotel ?",
+      "absolutely , can you provide me with the postcode and hotel type of the gonville hotel ?",
+      "sure , the postcode is cb11ly . can i book a room for you ?",
+      "no thank you . i am needing a train that will leave on wednesday and arrive by 13:15 .",
+      "i will check to see if i can find a train that matches your needs .",
+      "thanks . i'll be heading from broxbourne to cambridge .",
+      "i have 7 trains that meet your needs train tr5953 arrives in cambridge at 12:32 . would you like me to book it for you ?",
+      "tr5953 works fine , i need 3 people"
+    ]
+  },
+  {
+    "flag": "MUL0014.json-0",
+    "system": "",
+    "user": "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south"
+    },
+    "predict_turn_label": {
+      "hotel-parking": "yes",
+      "hotel-area": "south"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare"
+    },
+    "ground_truth_m24": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "MUL0014.json-1",
+    "system": "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+    "user": "i do not care about the star rating as long as it s expensive .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive"
+    },
+    "predict_turn_label": {
+      "hotel-pricerange": "expensive"
+    },
+    "ground_truth_m21": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_m24": {
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking ."
+    ]
+  },
+  {
+    "flag": "MUL0014.json-2",
+    "system": "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+    "user": "that is perfect can you book that for me please .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel"
+    },
+    "predict_turn_label": {
+      "hotel-name": "lensfield hotel"
+    },
+    "ground_truth_m21": {
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-name": "lensfield hotel"
+    },
+    "ground_truth_m24": {
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-name": "lensfield hotel"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive ."
+    ]
+  },
+  {
+    "flag": "MUL0014.json-3",
+    "system": "the lensfield hotel is located in the south . it has a 3 star rating and is expensive . there is free parking and internet . i have booked it for you .",
+    "user": "thank you . can you make sure that it s for 5 people staying for 2 nights , starting saturday ? also , would you mind sending me the reference number ?",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday"
+    },
+    "predict_turn_label": {
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday"
+    },
+    "ground_truth_m21": {
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2"
+    },
+    "ground_truth_m24": {
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive .",
+      "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+      "that is perfect can you book that for me please ."
+    ]
+  },
+  {
+    "flag": "MUL0014.json-4",
+    "system": "you are all set the reference is pgx293wd .",
+    "user": "i would also like to try a restaurant a friend mentioned . the nirala ?",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday",
+      "restaurant-name": "nirala"
+    },
+    "predict_turn_label": {
+      "restaurant-name": "nirala"
+    },
+    "ground_truth_m21": {
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-name": "nirala"
+    },
+    "ground_truth_m24": {
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-name": "nirala"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive .",
+      "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+      "that is perfect can you book that for me please .",
+      "the lensfield hotel is located in the south . it has a 3 star rating and is expensive . there is free parking and internet . i have booked it for you .",
+      "thank you . can you make sure that it s for 5 people staying for 2 nights , starting saturday ? also , would you mind sending me the reference number ?"
+    ]
+  },
+  {
+    "flag": "MUL0014.json-5",
+    "system": "the nirala is an indian restaurant on the north side , 7 milton road chesterton . phone number is 01223360966 . would you like me to book a reservation ?",
+    "user": "yes i would like a reservation for 5 at 19:30 , please .",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday",
+      "restaurant-name": "nirala",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "predict_turn_label": {
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "ground_truth_m21": {
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30",
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive .",
+      "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+      "that is perfect can you book that for me please .",
+      "the lensfield hotel is located in the south . it has a 3 star rating and is expensive . there is free parking and internet . i have booked it for you .",
+      "thank you . can you make sure that it s for 5 people staying for 2 nights , starting saturday ? also , would you mind sending me the reference number ?",
+      "you are all set the reference is pgx293wd .",
+      "i would also like to try a restaurant a friend mentioned . the nirala ?"
+    ]
+  },
+  {
+    "flag": "MUL0014.json-6",
+    "system": "sure , i can make a reservation , is that going to be on saturday ?",
+    "user": "yes , the same day . can i get the reference number , please ?",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday",
+      "restaurant-name": "nirala",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "restaurant-book day": "saturday",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30",
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {
+      "restaurant-book day": "saturday",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "ground_truth_m24": {
+      "restaurant-book day": "saturday",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30",
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {
+      "restaurant-book day": "saturday"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive .",
+      "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+      "that is perfect can you book that for me please .",
+      "the lensfield hotel is located in the south . it has a 3 star rating and is expensive . there is free parking and internet . i have booked it for you .",
+      "thank you . can you make sure that it s for 5 people staying for 2 nights , starting saturday ? also , would you mind sending me the reference number ?",
+      "you are all set the reference is pgx293wd .",
+      "i would also like to try a restaurant a friend mentioned . the nirala ?",
+      "the nirala is an indian restaurant on the north side , 7 milton road chesterton . phone number is 01223360966 . would you like me to book a reservation ?",
+      "yes i would like a reservation for 5 at 19:30 , please ."
+    ]
+  },
+  {
+    "flag": "MUL0014.json-7",
+    "system": "your table has been successfully booked for saturday . your reference number is mxdosqaq . is there anything else i can help you with ?",
+    "user": "no that is all . thank you !",
+    "predict_history": {
+      "hotel-parking": "yes",
+      "hotel-area": "south",
+      "hotel-pricerange": "expensive",
+      "hotel-name": "lensfield hotel",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-book day": "saturday",
+      "restaurant-name": "nirala",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "restaurant-book day": "saturday",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30",
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "restaurant-book day": "saturday",
+      "restaurant-book people": "5",
+      "restaurant-book time": "19:30",
+      "restaurant-name": "nirala",
+      "hotel-book day": "saturday",
+      "hotel-book people": "5",
+      "hotel-book stay": "2",
+      "hotel-name": "lensfield hotel",
+      "hotel-area": "south",
+      "hotel-parking": "dontcare",
+      "hotel-pricerange": "expensive",
+      "hotel-stars": "dontcare"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i am looking for a place to stay in the south of town . it does not need to have free parking .",
+      "there are 4 hotel -s that are in the area you are looking for . would you prefer a 3 or 4 star rated hotel ?",
+      "i do not care about the star rating as long as it s expensive .",
+      "the lensfield hotel is the only expensive hotel in the south area . would you like any more information on this location ?",
+      "that is perfect can you book that for me please .",
+      "the lensfield hotel is located in the south . it has a 3 star rating and is expensive . there is free parking and internet . i have booked it for you .",
+      "thank you . can you make sure that it s for 5 people staying for 2 nights , starting saturday ? also , would you mind sending me the reference number ?",
+      "you are all set the reference is pgx293wd .",
+      "i would also like to try a restaurant a friend mentioned . the nirala ?",
+      "the nirala is an indian restaurant on the north side , 7 milton road chesterton . phone number is 01223360966 . would you like me to book a reservation ?",
+      "yes i would like a reservation for 5 at 19:30 , please .",
+      "sure , i can make a reservation , is that going to be on saturday ?",
+      "yes , the same day . can i get the reference number , please ?"
+    ]
+  },
+  {
+    "flag": "SNG01924.json-0",
+    "system": "",
+    "user": "i need a taxi , please .",
+    "predict_history": {},
+    "predict_turn_label": {},
+    "ground_truth_m21": {},
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {},
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": []
+  },
+  {
+    "flag": "SNG01924.json-1",
+    "system": "i would be happy to assist you today . i'll need a little bit of information from you let s start with what time you would like to leave and arrive ?",
+    "user": "i need to get to restaurant 2 two by 5:15",
+    "predict_history": {
+      "taxi-arriveby": "5:15",
+      "taxi-destination": "restaurant 2 two"
+    },
+    "predict_turn_label": {
+      "taxi-arriveby": "5:15",
+      "taxi-destination": "restaurant 2 two"
+    },
+    "ground_truth_m21": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m21": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_m24": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m24": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-arriveby": "05:15"
+    },
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need a taxi , please ."
+    ]
+  },
+  {
+    "flag": "SNG01924.json-2",
+    "system": "ok , i need a little bit more information , where will your taxi be departing from ?",
+    "user": "i want to be picked up at williams art and antiques .",
+    "predict_history": {
+      "taxi-arriveby": "5:15",
+      "taxi-destination": "williams art and antiques"
+    },
+    "predict_turn_label": {
+      "taxi-destination": "williams art and antiques"
+    },
+    "ground_truth_m21": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m21": {
+      "taxi-departure": "williams art and antiques"
+    },
+    "ground_truth_m24": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m24": {
+      "taxi-departure": "williams art and antiques"
+    },
+    "predict_slot_changes": {
+      "taxi-destination": "\"taxi-destination\": \"restaurant 2 two\" -> \"taxi-destination\": \"williams art and antiques\""
+    },
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need a taxi , please .",
+      "i would be happy to assist you today . i'll need a little bit of information from you let s start with what time you would like to leave and arrive ?",
+      "i need to get to restaurant 2 two by 5:15"
+    ]
+  },
+  {
+    "flag": "SNG01924.json-3",
+    "system": "your taxi is booked: a blue volvo with the contact number of 07690471186 .",
+    "user": "i look forward to the ride . thank you .",
+    "predict_history": {
+      "taxi-arriveby": "5:15",
+      "taxi-destination": "williams art and antiques"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need a taxi , please .",
+      "i would be happy to assist you today . i'll need a little bit of information from you let s start with what time you would like to leave and arrive ?",
+      "i need to get to restaurant 2 two by 5:15",
+      "ok , i need a little bit more information , where will your taxi be departing from ?",
+      "i want to be picked up at williams art and antiques ."
+    ]
+  },
+  {
+    "flag": "SNG01924.json-4",
+    "system": "you are welcome . is there anything else i can do for you today ?",
+    "user": "no , that will be all . thanks very much .",
+    "predict_history": {
+      "taxi-arriveby": "5:15",
+      "taxi-destination": "williams art and antiques"
+    },
+    "predict_turn_label": {},
+    "ground_truth_m21": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m21": {},
+    "ground_truth_m24": {
+      "taxi-destination": "restaurant 2 two",
+      "taxi-departure": "williams art and antiques",
+      "taxi-arriveby": "05:15"
+    },
+    "ground_truth_turn_label_m24": {},
+    "predict_slot_changes": {},
+    "ground_truth_m21_slot_changes": {},
+    "ground_truth_m24_slot_changes": {},
+    "history": [
+      "",
+      "i need a taxi , please .",
+      "i would be happy to assist you today . i'll need a little bit of information from you let s start with what time you would like to leave and arrive ?",
+      "i need to get to restaurant 2 two by 5:15",
+      "ok , i need a little bit more information , where will your taxi be departing from ?",
+      "i want to be picked up at williams art and antiques .",
+      "your taxi is booked: a blue volvo with the contact number of 07690471186 .",
+      "i look forward to the ride . thank you ."
+    ]
+  }
+]

@@ -12,15 +12,16 @@ def get_sampled_dialogue_idx():
         d_idxs.add(dialogue_idx)
     lst = list(d_idxs)
     random.shuffle(lst)
-    with open('./parsed/sampled_dialogue_idx.txt', 'w', encoding='utf-8') as f:
-        for i in range(100):
+    with open('./sampled/sampled_dialogue_idx.txt', 'w', encoding='utf-8') as f:
+        for i in range(50): #50 dialogues
             f.write(lst[i] + '\n')
 
 
 def construct_data():
-    with open('./parsed/sampled_dialogue_idx.txt', encoding='utf-8') as f:
+    with open('./sampled/sampled_dialogue_idx.txt', encoding='utf-8') as f:
         d_idxs = set([each.strip() for each in f])
-    file_names = ['original', 'da', 'da-p']
+    ##file_names = ['original', 'da', 'da-p']
+    file_names = ['original']
     for file_name in file_names:
         with open(f'./parsed/{file_name}.json', encoding='utf-8') as f:
             data = json.load(f)
@@ -30,7 +31,7 @@ def construct_data():
             if dialogue_idx in d_idxs:
                 ans.append(each)
         print(len(ans))
-        with open(f'./parsed/{file_name}_sampled.json', 'w', encoding='utf-8') as f:
+        with open(f'./sampled/{file_name}_sampled.json', 'w', encoding='utf-8') as f:
             json.dump(ans, f, ensure_ascii=False, indent=2)
 
 

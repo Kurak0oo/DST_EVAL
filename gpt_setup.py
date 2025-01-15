@@ -2,14 +2,14 @@ from multiprocessing import Pool
 from tqdm import tqdm
 from openai import OpenAI
 from func_timeout import func_set_timeout
-client = OpenAI(api_key="sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d")
+client = OpenAI(api_key="sk-zk226cfbfd412c556205a3a5d139989e93b677b729db741d",base_url="https://api.zhizengzeng.com/")
 
 
 @func_set_timeout(100)
 def call_openai_api(input_text):
     response = client.chat.completions.create(
-        model="gpt-4o-2024-08-06",
-        messages=[{"role": "system", "content": ""}, {"role": "user", "content": input_text}],
+        model="gpt-4o",
+        messages=[{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": input_text}],
         temperature=0.0,
     )
     return my_parse(response)
@@ -21,8 +21,8 @@ def process_text(inputs):
             result = call_openai_api(inputs['gpt_input'])
             # print(f"Output for input:\n{result}\n{'='*30}")
             return inputs['align_data'], result, inputs['gpt_input']
-        except:
-            print('error')
+        except Exception as e:
+            print(f"Error calling API: {e}")
             continue
     return inputs['align_data'], '', inputs['gpt_input']
 

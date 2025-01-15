@@ -1,34 +1,44 @@
+### Background:
+In the following examples, you will receive **Current Prediction** (from the DST model) and **Ground Truth** (from MultiWOZ 2.1 and 2.4) for "Current Dialouge". Your task is to analyze the **error** of **Current Prediction**, NOT the **Prediction History** with the help of information in **Current Dialogue** and **Dialogue History** 
+
 ### Instructions:
-Given the following dialogue history, model prediction, and ground truth, please **categorize the error** in a **generalized** way. Your response should focus on **why** this error might have occurred from a **higher-level perspective**. Specifically, focus on the broader causes of the error, and explain them without getting into trivial details or specific slot-value mismatches.
+Please **categorize the error** in a **generalized** way. Your response should focus on **why** this error might have occurred from a **higher-level perspective**. Specifically, focus on the broader causes of the error, and explain them without getting into trivial details or specific slot-value mismatches.
 
 Your analysis should:
-1. **Categorize** the error in a **broad** error type with **as much general insights**.
+1. **Categorize** the error in a **broad** error type with **as much general details of why this error occur**.
 2. **Explain** the broader reasons behind this type of error.
 ---
 
-### Dialogue Context:
+### Dialogue History:
 {history}
 
-### Model Prediction:
+### Current Dialogue:
+System:{system}
+User:{user}
+
+### Current Prediction:
+{turn_label}
+
+### Prediction History:
 {predict_history}
 
 ### Ground Truth (M21):
-{ground_truth_m21}
+{ground_truth_turn_label_m21}
 
 ### Ground Truth (M24):
-{ground_truth_m24}
+{ground_truth_turn_label_m24}
 
 ---
-**Please categorize the errors so that could explain the broader causes of the error, its potential sources, and general patterns. Avoid focusing on specific slot-value errors, but provide insights that could apply to a wide range of situations and help guide future improvements for DST models.**
+**Please categorize the errors which could explain the broader causes of the error, its potential sources, and general patterns. Avoid focusing on specific slot-value errors, but provide insights that could apply to a wide range of situations and help guide future improvements for DST models.**
 
-### Example Output
-**1. General Error Category**:
-[Category name that highlights the broad cause or pattern of the error. Examples might include: 
-- Misunderstanding of Intent Due to Informal Language Usage
-- Context Loss Across Dialogue Turns
-- Inflexibility in Slot Matching and Lack of Semantic Understanding
-- Over-Penalization of Minor Slot Differences in Evaluation
-- Ambiguities in Ground Truth and Labeling Inconsistencies]
+### Output Format:
+{{
+  "judgement": "[Correct] or [Wrong]",
+  "error_category": "[Broad Context or Area] caused by [Specific Cause or Factor], which leads to [Impact or Consequence]",
+  "error_description": "[A high-level detailed explanation of the error]"
+}}
+---
 
-**2. Error Description**:
-[A high-level summary of the error that avoids focusing on specific slot-value mismatches. The explanation should emphasize why the error happened from a broad perspective.]
+Notice:
+1,Do not output anything other than the Judgement when considering predictions be Correct
+2,Your task is to analyze the **error** of **Current Prediction**, NOT the **Prediction History**, but **Prediction History** could have impact on your Judgement

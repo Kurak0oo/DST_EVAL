@@ -1,0 +1,21 @@
+### Error Categorization Task ###
+You are provided with an error and its detailed description. Below is the current taxonomy of error categories:
+
+### Existing Taxonomy ###
+{existing_taxonomy}
+
+Your task:
+1. Determine if the provided error fits into one of the existing categories.
+   - If yes, validate the category name and provide an explanation.
+   - If no, propose a new category with a clear and mutually exclusive name, and explain why it is needed.
+
+### Error to Categorize ###
+Error Category: {error_category}
+Error Description: {error_description}
+
+### Output Format ###
+{{
+  "refined_category": "[Refined or New Category Name]",
+  "refined_description": "[Improved or Newly Added Description]",
+  "comments": "[Explanation for validation or new category creation]"
+}}
