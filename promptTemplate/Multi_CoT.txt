@@ -1,0 +1,23 @@
+### Current Turn:
+{{
+"Agent": {system},
+"User": {user},
+"State of this turn": {turn_label}
+}}
+
+### Instruction:
+Your task is to assess the completeness, accuracy and reasonability of slot change(if present) of current turn state. The turn predict is represented by a set of domain-slot, value pairs that represent only the state mentioned in the current turn utterances between the system and the user:
+- Based on "All possible Domains and Slot-value pairs" and "Potential Missing cases" to evaluate the completeness according to "Current Dialogue".
+- If there are missing domain-slot Identify and extract **exact sentences or phrases** from the current turn (System or User).
+
+Let's think step by step.
+
+### Output Format:
+Please output your analysis in JSON format as follows:
+{{
+"explanation": <the process of your step by step thinking>,
+// missed domain-slot, value pairs in "State of this turn". Note that domain-slot, value pairs not mentioned in the current turn utterances should not be considered and those value has not been expressed should not be
+"incorrect_domain_slot": {{"domain-slot1": <value1>, ...}},
+"missed_domain_slot": {{"domain-slot1": <its corresponding value>, ...}},
+"evidence":<evidence1:...,evidence2:...>
+}}

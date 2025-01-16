@@ -4,13 +4,16 @@
 "User": {user},
 "State of this turn": {turn_label}
 }}
----
+
 ### Instruction:
-Your task is to evaluate all the domain-slot, value pairs in "State of this turn". The turn state is used to represent the user's requirements and confirmation. Note that domain information is just generic information. Constraints are determined by the slot, not the domain. Capitalization and the completeness is not a consideration
----
+Your task is to evaluate all the domain-slot, value pairs in "State of this turn". The turn state is used to represent the user's requirements and confirmation. Note that domain information is just generic information.
+
+Let's think step by step.
+
 ### Output Format:
 Please output your analysis in JSON format as follows:
 {{
+"step_by_step_thinking": [the process of your step by step thinking],
 // incorrect domain-slot, value pairs in "State of this turn". Note that only domain-slot, value pairs in "State of this turn" should be evaluated.
 "incorrect_domain_slot": {{"domain-slot1": <value1>, ...}}
 }}
